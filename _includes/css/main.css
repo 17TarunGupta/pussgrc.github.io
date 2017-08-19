@@ -445,7 +445,7 @@ csmall {
 
 /* Contact Page */
 #contactwrap {
-/*	background: url(../img/contact.jpg) no-repeat center top; */
+/*	background: url(../img/contact.jpg) no-repeat center top;
 	margin-top: -60px;
 	padding-top:0px;
 	text-align:center;
@@ -463,7 +463,7 @@ csmall {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+} */
 
 /* Blog Page */
 .popular-posts { 
