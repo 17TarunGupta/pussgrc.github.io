@@ -4,7 +4,9 @@ title: "All About Compiling And Running C Programs On Linux"
 date: 2017-08-19 16:54:46
 author: Admin
 categories:
-- blog
+- blog 
+- Wordpress
+- Photoshop
 img: post03.jpg
 thumb: thumb03.jpg
 ---
