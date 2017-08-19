@@ -1,8 +1,8 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: SOLID.
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title:YANTRIX .
+description: "This is portfolio of 'YANTRIX' the official technical club of PUSSGRC,HOSHIARPUR, developed by Platform. It sharpen the  technical skills of college students"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl:   "" 
 url: "https://yantrix-pussgrc.github.io/"
@@ -37,7 +37,7 @@ social:
   - title: dribbble
     url:
   - title: facebook
-    url: https://www.facebook.com/yantrixUIETH
+    url:
   - title: twitter
     url:
   - title: instagram
@@ -48,24 +48,24 @@ social:
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines:
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+    - PUSSGRC, UNA ROAD
+    - BAJWARA, HOSHIARPUR,
+    - PUNJAB,INDIA.
+email: yantrix@gmail.com.com
+tel: 9631560280
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
 # Members information. Shown on About page.
 members:
-  - name: Mark Webber
-    position: CEO
-    text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  - name: DILIP KUMAR SHARMA
+    position: 
+    text: FULL-STACK WEB DEVELOPER, IOT MAANAGER.
     img: team01.jpg
     social:
       - title: envelope #use for email address
-        url: mailto:name@domain.com
+        url: mailto:@domain.com
       - title: twitter
         url: http://twitter.com/handle
   - name: Paul Jameson
