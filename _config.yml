@@ -1,8 +1,8 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title:YANTRIX .
-description: "This is portfolio of 'YANTRIX' the official technical club of PUSSGRC,HOSHIARPUR, developed by Platform. It sharpen the  technical skills of college students."
+title: "YANTRIX"
+description: "This is portfolio of YANTRIX the official technical club of PUSSGRC,HOSHIARPUR, developed by Platform. It sharpen the  technical skills of college students."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl:   "" 
 url: "https://yantrix-pussgrc.github.io/"
