@@ -4,7 +4,7 @@
 title: "YANTRIX"
 description: "This is portfolio of YANTRIX the official technical club of PUSSGRC,HOSHIARPUR, developed by Platform. It sharpen the  technical skills of college students."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
-baseurl:   "" 
+baseurl:   "platform.net.in"
 url: "https://yantrix-pussgrc.github.io/"
 
 # Build settings
@@ -40,15 +40,13 @@ social:
     url: https://www.facebook.com/yantrixUIETH/
   - title: twitter
     url:
-  - title: whatsapp
-    url:
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address: 
   - lines:
     - PUSSGRC, UNA ROAD, BAJWARA.
-    - HOSHIARPUR, 146023
-    - PUNJAB,INDIA.
+    -     HOSHIARPUR, 146023
+    -         PUNJAB,INDIA.
 email: "yantrix@platform.net.in"
 tel: "9631560280"
 
