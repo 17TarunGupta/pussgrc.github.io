@@ -17,12 +17,12 @@ Face Recognition using K-Nearest Neighbors
 
 **Packages to Install:-**
 
-*Python 2.7,
+*Python 2.7
 
-*Numpy, SciPy,
+*Numpy SciPy
 
-*Mathplotlib,
-*OpenCV Python.
+*Mathplotlib
+*OpenCV Python
 
 **KNN classifier** is best suited for classifying persons based on their images due to its lesser execution time and better accuracy than other commonly used methods which include Hidden Markov Model and Kernel method. Although methods like SVM and Adaboost algorithms are proved to be more accurate than KNN classifier, KNN classifier has a faster execution time and is dominant than SVM.
 The simplest classification scheme is a nearest neighbor classification in the image space. Under this scheme an image in the test set is recognized by assigning to it the label of the closest point in the learning set, where distance are measured in image space.
