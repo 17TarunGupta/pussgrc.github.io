@@ -5,8 +5,7 @@ date: 2017-08-19 16:54:46
 author: Admin
 categories:
 - blog 
-- Wordpress
-- Photoshop
+-- C
 img: post03.jpg
 thumb: thumb03.jpg
 ---
