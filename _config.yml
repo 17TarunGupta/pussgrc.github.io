@@ -39,10 +39,8 @@ social:
   - title: facebook
     url: https://www.facebook.com/yantrixUIETH/
   - title: twitter
-    url: 
-  - title: instagram
     url:
-  - title: tumblr
+  - title: whatsapp
     url:
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
@@ -108,7 +106,7 @@ clients:
     img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Yantrix is the official technical group of PUSSGRC,Hoshiarpur."
+about: "YANTRIX is the official technical group of Pussgrc,Hoshiarpur."
 
 # Testimonial content. Shown on Home and About page.
 testimonial:
