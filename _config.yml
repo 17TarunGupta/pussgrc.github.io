@@ -61,9 +61,9 @@ members:
     img: team01.jpg
     social:
       - title: envelope #use for email address
-        url: mailto:dilip@platform.net.in
-      - title: twitter
-        url: http://twitter.com/handle
+        url: mailto:krdilip276@gmail.com
+      - title: facebook
+        url: https://www.facebook.com/dilipkumar.sharma.7731247
   - name: Paul Jameson
     position: Lead Designer
     text: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -104,7 +104,7 @@ clients:
     img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "YANTRIX is the official technical Club of Punjab University ssg rrgional centre,Hoshiarpur."
+about: "YANTRIX is the official technical Club of Punjab University Ssg regional centre,Hoshiarpur."
 
 # Testimonial content. Shown on Home and About page.
 testimonial:
