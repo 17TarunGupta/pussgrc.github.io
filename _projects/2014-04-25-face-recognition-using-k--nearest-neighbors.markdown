@@ -16,13 +16,9 @@ website: https://www.linkedin.com/in/rahul10-pu
 Face Recognition using K-Nearest Neighbors
 
 Packages to Install:-
-
 Python 2.7
-
 Numpy, SciPy
-
 Mathplotlib
-
 OpenCV Python
 
 KNN classifier is best suited for classifying persons based on
