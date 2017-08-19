@@ -7,6 +7,10 @@
 	Version: 1.0
 	URL: http://alvarez.is
 	
+	Edited by : Dilip kumar sharma
+	url: platform.net.in
+	project Name: yantrix site
+	
 ################################################################# */ 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
@@ -138,7 +142,7 @@ a:focus {
 .dropdown-menu > li > a {
 	color: white;
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 18px;
 }
 
 .btn-theme {
