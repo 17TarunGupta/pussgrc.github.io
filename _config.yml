@@ -34,25 +34,25 @@ collections:
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-  - title: dribbble
-    url:
+  - title: github
+    url: https://github.com/Yantrix-PUSSGRC/
   - title: facebook
-    url:
+    url: https://www.facebook.com/yantrixUIETH/
   - title: twitter
-    url:
+    url: 
   - title: instagram
     url:
   - title: tumblr
     url:
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
-address:
+address: 
   - lines:
-    - PUSSGRC, UNA ROAD
-    - BAJWARA, HOSHIARPUR,
+    - PUSSGRC, UNA ROAD, BAJWARA.
+    - HOSHIARPUR, 146023
     - PUNJAB,INDIA.
-email: yantrix@gmail.com.com
-tel: 9631560280
+email: "yantrix@platform.net.in"
+tel: "9631560280"
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
@@ -60,7 +60,7 @@ tel: 9631560280
 # Members information. Shown on About page.
 members:
   - name: DILIP KUMAR SHARMA
-    position: 
+    position: CEO
     text: FULL-STACK WEB DEVELOPER, IOT MAANAGER.
     img: team01.jpg
     social:
@@ -108,10 +108,10 @@ clients:
     img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: ""
+about: "Yantrix is the official technical group of PUSSGRC,Hoshiarpur."
 
 # Testimonial content. Shown on Home and About page.
 testimonial:
-    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-    author: Marcel Newman
-    position: WEB DESIGNER - BLACKTIE.CO
+    message: "Building technical systems involves a lot of hard work and specialized knowledge: languages and protocols, coding and debugging, testing and refactoring."
+    author: "Jesse James Garrett"
+    position: A Techie Person
