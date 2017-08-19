@@ -2,7 +2,7 @@
 
 # Site settings
 title:YANTRIX .
-description: "This is portfolio of 'YANTRIX' the official technical club of PUSSGRC,HOSHIARPUR, developed by Platform. It sharpen the  technical skills of college students"
+description: "This is portfolio of 'YANTRIX' the official technical club of PUSSGRC,HOSHIARPUR, developed by Platform. It sharpen the  technical skills of college students."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl:   "" 
 url: "https://yantrix-pussgrc.github.io/"
@@ -65,7 +65,7 @@ members:
     img: team01.jpg
     social:
       - title: envelope #use for email address
-        url: mailto:@domain.com
+        url: mailto:dilip@platform.net.in
       - title: twitter
         url: http://twitter.com/handle
   - name: Paul Jameson
@@ -108,7 +108,7 @@ clients:
     img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+about: ""
 
 # Testimonial content. Shown on Home and About page.
 testimonial:
