@@ -41,7 +41,7 @@ printf("hello, world!\n");
 
 **Now, let's perform all four steps to compile and run C program one by one.**
 
-![comile](![compile](/_posts/compile.gif))
+![comile](/assets/img/blog/compile.gif)
 
 >1. Preprocessing :---
 During compilation of a C program the compilation is started off with preprocessing the directives (e.g., #include and #define). The preprocessor (cpp - c preprocessor) is a separate program in reality, but it is invoked automatically by the compiler. For example, the #include <stdio.h> command in line 1 of helloworld.c tells the preprocessor to read the contents of the system header file stdio.h and insert it directly into the program text. The result is another file typically with the .i suffix. In practice, the preprocessed file is not saved to disk unless the -save-temps option is used.
