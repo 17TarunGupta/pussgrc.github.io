@@ -18,9 +18,9 @@ Today’s engineering is based on reducing human efforts in affordable prices an
 It is strictly based on the working of the infra-red rays. Infra-red radiations extends from the nominal red edge of the visible spectrum at 700nm to 1mm. This range of wavelengths corresponds to a frequency of approximately 430 THz to 300GHz.The Infra-red rays work just like a switch i.e. when the transmitted Infra-red rays will reach the receiver circuit , the circuit will get closed and the device will be turned on.
 ### Circuit
 It consists of two parts
-    --1.	Transmitter circuit
-    --2.	Receiver circuit
-                                    ![Transmitter circuit](/assets/blog/infrared/infraTransmitter.jpg)
+  1.	Transmitter circuit
+  2.	Receiver circuit
+    ![Transmitter circuit](/assets/blog/infrared/infraTransmitter.jpg)
 
 The transmitter circuit uses one IC i.e. NE555 which is a pulse generator the NE555 is used in its monostable state i.e. it will be generating a pulse and the time period of the pulse will be calculated by time constant of RC coupling. 
 The 1st pin is ground hence connected to negative terminal of the battery. Second is trigger i.e. it will trigger the circuit when sufficient voltage is applied. The third pin is for output, forth for reset, 5th for control, 6th is for threshold voltage, 7th is discharge and 8th is VCC. 
