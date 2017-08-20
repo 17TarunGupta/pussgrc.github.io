@@ -1,31 +1,35 @@
 ---
 layout: post
-title:  "Our new logo is here"
-date:   2014-04-25 16:54:46
+title:  "Infra-Red Remote Control Home Appliances"
+date:   2017-08-20 22:20:46
 author: Admin
 categories: 
 - blog
-- Web-Design
-- Development
+- Electronics
+- Sensors
+- Robotics
 img: post02.jpg
 thumb: thumb02.jpg
 ---
 
-<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+**Introduction**
+Today’s engineering is based on reducing human efforts in affordable prices and this is mostly done by using “Wireless technology and Artificial Intelligence”. The manual switching of any home appliance is an inconvenient method for physically disabled or elders or even normal young guys when frequent switching operation is required. Thus the conventional method of switching operation has to be overcome by using a method of switching. This can be done by an advance switching method like a remote control for electronic home appliances.
+**Principle**
+It is strictly based on the working of the infra-red rays. Infra-red radiations extends from the nominal red edge of the visible spectrum at 700nm to 1mm. This range of wavelengths corresponds to a frequency of approximately 430 THz to 300GHz.The Infra-red rays work just like a switch i.e. when the transmitted Infra-red rays will reach the receiver circuit , the circuit will get closed and the device will be turned on.
+**Circuit**
+It consists of two parts
+    1.	Transmitter circuit
+    2.	Receiver circuit
+                                    ![Transmitter circuit](/blog/infrared/infraTransmitter.jpg)
 
-It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <!--more-->
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+The transmitter circuit uses one IC i.e. NE555 which is a pulse generator the NE555 is used in its monostable state i.e. it will be generating a pulse and the time period of the pulse will be calculated by time constant of RC coupling. 
+The 1st pin is ground hence connected to negative terminal of the battery. Second is trigger i.e. it will trigger the circuit when sufficient voltage is applied. The third pin is for output, forth for reset, 5th for control, 6th is for threshold voltage, 7th is discharge and 8th is VCC. 
+In the circuit the NE555 will generate pulse when sufficient voltage is reaching at the 2nd pin of the IC and the pulse generated from the IC will complete the circuit as a result the IR transmitter will emit the Infra-red radiation.
 
-Contrary to popular belief, <b>Lorem Ipsum is not simply random text</b>. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at [Hampden-Sydney College][hampden] in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.<
+**Receiver circuit**
+                                  ![Receiver circuit](/blog/infrared/infraReciever.jpg)
 
-Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The circuit uses phototransistor TSOP 1738 and NE555 timer IC in its bistable state. The signal pin is connected to 2nd pin of NE555 which is the trigger pin of the IC as told earlier. As the phototransistor will receive the Infra-red radiation and this signal will be passed on to the trigger pin of the IC which will further switch on the circuit and the light will be switched on. As the NE555 is in bistable state it will be turned on when a pulse is generated then if second pulse will be given to the its trigger pin then NE555 will be turned off hence, the circuit will be turned off. Thus this will serve the purpose of remote control.
 
-####Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-
-
->Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-
-[hampden]: https://github.com/jekyll/jekyll
+**Future scope**
+It can be used in places like hospitals or for places where handicapped, old or people who cannot move much resides. Research labs of radioactive substances can also use this. If used with counter IC 4017 we can make it usable for switching operation of large number of electrical appliances and can be used in big halls. It is very useful in robotics branch of science.
