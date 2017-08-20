@@ -27,8 +27,8 @@ The 1st pin is ground hence connected to negative terminal of the battery. Secon
 In the circuit the NE555 will generate pulse when sufficient voltage is reaching at the 2nd pin of the IC and the pulse generated from the IC will complete the circuit as a result the IR transmitter will emit the Infra-red radiation.
 
 ### Receiver circuit
-                                  ![Receiver circuit](/assets/blog/infrared/infraReciever.jpg)
-
+   ![Receiver circuit](/assets/blog/infrared/infraReciever.jpg)
+   
 The circuit uses phototransistor TSOP 1738 and NE555 timer IC in its bistable state. The signal pin is connected to 2nd pin of NE555 which is the trigger pin of the IC as told earlier. As the phototransistor will receive the Infra-red radiation and this signal will be passed on to the trigger pin of the IC which will further switch on the circuit and the light will be switched on. As the NE555 is in bistable state it will be turned on when a pulse is generated then if second pulse will be given to the its trigger pin then NE555 will be turned off hence, the circuit will be turned off. Thus this will serve the purpose of remote control.
 
 ### Future scope
