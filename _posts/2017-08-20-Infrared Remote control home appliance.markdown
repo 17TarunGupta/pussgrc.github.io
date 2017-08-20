@@ -14,6 +14,7 @@ thumb: thumb02.jpg
 
 ### Introduction
 Today’s engineering is based on reducing human efforts in affordable prices and this is mostly done by using “Wireless technology and Artificial Intelligence”. The manual switching of any home appliance is an inconvenient method for physically disabled or elders or even normal young guys when frequent switching operation is required. Thus the conventional method of switching operation has to be overcome by using a method of switching. This can be done by an advance switching method like a remote control for electronic home appliances.
+<!--more-->
 ### Principle
 It is strictly based on the working of the infra-red rays. Infra-red radiations extends from the nominal red edge of the visible spectrum at 700nm to 1mm. This range of wavelengths corresponds to a frequency of approximately 430 THz to 300GHz.The Infra-red rays work just like a switch i.e. when the transmitted Infra-red rays will reach the receiver circuit , the circuit will get closed and the device will be turned on.
 ### Circuit
