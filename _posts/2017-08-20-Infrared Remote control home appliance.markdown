@@ -20,14 +20,14 @@ It is strictly based on the working of the infra-red rays. Infra-red radiations 
 It consists of two parts
     --1.	Transmitter circuit
     --2.	Receiver circuit
-                                    ![Transmitter circuit](/blog/infrared/infraTransmitter.jpg)
+                                    ![Transmitter circuit](/assets/blog/infrared/infraTransmitter.jpg)
 
 The transmitter circuit uses one IC i.e. NE555 which is a pulse generator the NE555 is used in its monostable state i.e. it will be generating a pulse and the time period of the pulse will be calculated by time constant of RC coupling. 
 The 1st pin is ground hence connected to negative terminal of the battery. Second is trigger i.e. it will trigger the circuit when sufficient voltage is applied. The third pin is for output, forth for reset, 5th for control, 6th is for threshold voltage, 7th is discharge and 8th is VCC. 
 In the circuit the NE555 will generate pulse when sufficient voltage is reaching at the 2nd pin of the IC and the pulse generated from the IC will complete the circuit as a result the IR transmitter will emit the Infra-red radiation.
 
 ### Receiver circuit
-                                  ![Receiver circuit](/blog/infrared/infraReciever.jpg)
+                                  ![Receiver circuit](/assets/blog/infrared/infraReciever.jpg)
 
 The circuit uses phototransistor TSOP 1738 and NE555 timer IC in its bistable state. The signal pin is connected to 2nd pin of NE555 which is the trigger pin of the IC as told earlier. As the phototransistor will receive the Infra-red radiation and this signal will be passed on to the trigger pin of the IC which will further switch on the circuit and the light will be switched on. As the NE555 is in bistable state it will be turned on when a pulse is generated then if second pulse will be given to the its trigger pin then NE555 will be turned off hence, the circuit will be turned off. Thus this will serve the purpose of remote control.
 
