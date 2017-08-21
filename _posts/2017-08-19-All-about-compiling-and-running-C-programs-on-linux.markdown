@@ -13,9 +13,9 @@ thumb: thumb03.jpg
 Steps to Compile and Execute C Program in Linux Using GCC :--
 
 
---> Before talking of compiling and running C program in Linux let's see why C is so popular ever since it was created. He was the Dennis Ritchie who developed C language in 1969 to 1973. C was developed from the beginning as the system programming language for UNIX. Most of the UNIX kernel, and all of its supporting tools and libraries, were written in C. Initially, C was designed to implement the UNIX operating system. Later other folks found it useful for their programs without any hindrance, and they began using it. Even today, C is the first choice for system-level programming.
+--> Before talking of compiling and running C program in Linux let's see why C is so popular ever since it was created. He was the Dennis Ritchie who developed C language in 1969 to 1973. C was developed from the beginning as the system programming language for UNIX. Most of the UNIX kernel  <!--more-->, and all of its supporting tools and libraries, were written in C. Initially, C was designed to implement the UNIX operating system. Later other folks found it useful for their programs without any hindrance, and they began using it. Even today, C is the first choice for system-level programming.
 
-This tutorial explains compilation and execution of C program is in detail.<!--more-->
+This tutorial explains compilation and execution of C program is in detail.
 
 Compile C Program in Linux - A Classic example Hello World! :--
 
