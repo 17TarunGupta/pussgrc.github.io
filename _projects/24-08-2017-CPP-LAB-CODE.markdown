@@ -8,7 +8,9 @@ categories:
 img: portfolio_04.jpg #place image (600x450) with this name in /assets/img/project/
 thumb: thumb01.jpg
 carousel:        #place image (1280x600) with this name in /assets/img/project/carousel/
-- single02.jpg
+- cpp1.jpg
+- cpp01.jpg
+- cpp02.jpg
 client: YANTRIX
 website: http://www.platform.net.in
 ---
