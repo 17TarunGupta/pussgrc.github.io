@@ -79,7 +79,7 @@ members:
         url: https://www.facebook.com/chetanmalhotra1388
   - name: Ayush raj
     position: core member
-    text: Operating System
+    text: HARDWARE PROGRAMIN, GOPERATING SYSTEM
     img: team03.jpg
     social:
       - title: envelope #use for email address
@@ -98,7 +98,7 @@ clients:
     img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "YANTRIX is the official technical Club of Punjab University Ssg regional centre,Hoshiarpur."
+about: "YANTRIX is the official technical Club of Punjab University SSG REGIONAL CENTER,Hoshiarpur."
 
 # Testimonial content. Shown on Home and About page.
 testimonial:
