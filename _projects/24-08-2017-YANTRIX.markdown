@@ -13,6 +13,7 @@ carousel:        #place image (1280x600) with this name in /assets/img/project/c
 - cpp02.jpg
 website: http://www.platform.net.in
 ---
+
 # YANTRIX WEBSITE
 
 In Yantrix Website Project we create advance Port-folio through jkeyll theme. This is Multi-Page semi Dynamic website.
