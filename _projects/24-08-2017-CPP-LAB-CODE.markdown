@@ -11,17 +11,11 @@ carousel:        #place image (1280x600) with this name in /assets/img/project/c
 - cpp1.jpg
 - cpp01.jpg
 - cpp02.jpg
-client: YANTRIX
 website: http://www.platform.net.in
 ---
-#### YANTRIX-CPP
-## C++ PROGRAMS
+# C++ PROGRAMS
 The theoretical study of object oriented programming in c++ has helped us understand what the language can help us for real life use.
-
 But to practice that, it is important to brings its practical aspect into the curriculum. So these practical programs of c++ have helped me and other begineers to understand how we can put what we have learnt into use.
-
-Here all programs are simple demonstrations.
-
+**Here all programs are simple demonstrations.**
 I would like to thanks Mr. Naveen Dogra sir for always guiding me in the same.
-## project url
-[cpp-programs-dilip-cse](https://github.com/PUSSGRC/cpp-programs-dilip-cse/tree/Assignment)
+>Project URL :-   [cpp-programs-dilip-cse](https://github.com/PUSSGRC/cpp-programs-dilip-cse/tree/Assignment)
