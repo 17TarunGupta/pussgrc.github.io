@@ -1,11 +1,11 @@
 ---
 layout: project       #important: don't change this
-title:  "YANTRIX SITE"
-date: 2017-08-24 08:07:00
-author: RAHUL KUMAR, DILIP KUMAR SHARMA
-categories: Website
+title:  "CPP LAB CODE"
+date: 2017-08-24 02:08:00
+author: DILIP KUMAR SHARMA
+categories:
 - project             #important: leave this here
-img: portfolio_08.jpg #place image (600x450) with this name in /assets/img/project/
+img: portfolio_04.jpg #place image (600x450) with this name in /assets/img/project/
 thumb: thumb01.jpg
 carousel:        #place image (1280x600) with this name in /assets/img/project/carousel/
 - cpp1.jpg
