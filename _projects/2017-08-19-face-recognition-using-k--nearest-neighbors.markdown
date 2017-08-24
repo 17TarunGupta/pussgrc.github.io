@@ -13,33 +13,176 @@ carousel:
 tagged: Machine Learning
 website: https://www.linkedin.com/in/rahul10-pu
 ---
-Face Recognition using K-Nearest Neighbors
+# Face Recognition using K-Nearest Neighbors
 
 **Packages Used:-**
-
 * Python 2.7
 * Numpy, SciPy
 * Mathplotlib
 * OpenCV Python
 
-**KNN classifier** 
+record_faces.py
+```python
+import numpy as np
+import cv2
 
->It is best suited for classifying persons based on their images due to its lesser execution time and better accuracy than other commonly used methods which include Hidden Markov Model and Kernel method. Although methods like SVM and Adaboost algorithms are proved to be more accurate than KNN classifier, KNN classifier has a faster execution time and is dominant than SVM.
+# instantiate a camera object to capture images
+cam = cv2.VideoCapture(1)
 
->The simplest classification scheme is a nearest neighbor classification in the image space. Under this scheme an image in the test set is recognized by assigning to it the label of the closest point in the learning set, where distance are measured in image space.
+# create a haar-cascade object for face detection
+face_cas = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
 
->The Euclidean distance metric is often chosen to determine the closeness between the data points in KNN. A distance is assigned between all pixels in a dataset. Distance is defined as the Euclidean distance between two pixels. This Euclidean distance is by default in a KNN classifier. But the distance between two features can be measured based on one of the distance cosine and correlation.
+# create a placeholder for storing the data
+data = []
+ix = 0	# current frame number
 
-**K-NN Algorithm**
->The k-nearest neighbour algorithm (k-NN) is a method for classifying objects based on closest training examples in the feature space. K-NN is a type of instance-based learning, or lazy learning where the function is only approximated locally and all computation is deferred until classification.
-The k-nearest neighbour algorithm is amongst the simplest of all machine learning algorithms: an object is classified by a majority vote of its neighbours, with the object being assigned to the class most common amongst its k nearest neighbours (k is a positive integer, typically small). 
+while True:
+	# retrieve the ret (boolean) and frame from camera
+	ret, frame = cam.read()
 
-If k = 1, then the object is simply assigned to the class of its nearest neighbour. 
+	# if the camera is working fine, we proceed to extract the face
+	if ret == True:
+		# convert the current frame to grayscale
+		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
- 1. Each data pixel value within the data set has a class label in the set, Class = {c1,...,cn}.
- 
- 2. The data points', k-closest neighbors (k being the  number of neighbors) are then found by analyzing the distance matrix.
- 
-  3. The k-closest data points are then analyzed to determine which class label is the most common among the set.
-  
-  4. The most common class label is then assigned to the data point being analyzed. 
+		# apply the haar cascade to detect faces in the current frame
+		# the other parameters 1.3 and 5 are fine tuning parameters
+		# for the haar cascade object
+		faces = face_cas.detectMultiScale(gray, 1.3, 5)
+
+		# for each face object we get, we have
+		# the corner coords (x, y)
+		# and the width and height of the face
+		for (x, y, w, h) in faces:
+
+			# get the face component from the image frame
+			face_component = frame[y:y+h, x:x+w, :]
+
+			# resize the face image to 50X50X3
+			fc = cv2.resize(face_component, (50, 50))
+
+			# store the face data after every 10 frames
+			# only if the number of entries is less than 20
+			if ix%10 == 0 and len(data) < 20:
+				data.append(fc)
+
+			# for visualization, draw a rectangle around the face
+			# in the image
+			cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+		ix += 1	# increment the current frame number
+		cv2.imshow('frame', frame)	# display the frame
+
+		# if the user presses the escape key (ID: 27)
+		# or the number of images hits 20, we stop
+		# recording.
+		if cv2.waitKey(1) == 27 or len(data) >= 20:
+			break
+	else:
+		# if the camera is not working, print "error"
+		print "error"
+
+# now we destroy the windows we have created
+cv2.destroyAllWindows()
+
+# convert the data to a numpy format
+data = np.asarray(data)
+
+# print the shape as a sanity-check
+print data.shape
+
+# save the data as a numpy matrix in an encoded format
+np.save('face_03', data)
+
+# We'll run the script for different people and store
+# the data into multiple files
+```
+FaceRec.py
+```python
+import numpy as np
+import cv2
+
+# instantiate the camera object and haar cascade
+cam = cv2.VideoCapture(1)
+face_cas = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
+
+# declare the type of font to be used on output window
+font = cv2.FONT_HERSHEY_SIMPLEX
+
+# load the data from the numpy matrices and convert to linear vectors
+f_01 = np.load('face_01.npy').reshape((20, 50*50*3))	# Shubham
+f_02 = np.load('face_02.npy').reshape((20, 50*50*3))	# Prateek
+f_03 = np.load('face_03.npy').reshape((20, 50*50*3))	# Laksh
+
+print f_01.shape, f_02.shape, f_03.shape
+
+# create a look-up dictionary
+names = {
+	0: 'Shubham',
+	1: 'Prateek', 
+	2: 'Laksh',
+}
+
+# create a matrix to store the labels
+labels = np.zeros((60, 1))
+labels[:20, :] = 0.0	# first 20 for shubham (0)
+labels[20:40, :] = 1.0	# next 20 for prateek (1)
+labels[40:, :] = 2.0	# last 20 for laksh (2)
+
+# combine all info into one data array
+data = np.concatenate([f_01, f_02, f_03])	# (60, 7500)
+print data.shape, labels.shape	# (60, 1)
+
+# the distance and knn functions we defined earlier
+def distance(x1, x2):
+    return np.sqrt(((x1-x2)**2).sum())
+
+def knn(x, train, targets, k=5):
+    m = train.shape[0]
+    dist = []
+    for ix in range(m):
+        # compute distance from each point and store in dist
+        dist.append(distance(x, train[ix]))
+    dist = np.asarray(dist)
+    indx = np.argsort(dist)
+    sorted_labels = labels[indx][:k]
+    counts = np.unique(sorted_labels, return_counts=True)
+    return counts[0][np.argmax(counts[1])]
+
+while True:
+	# get each frame
+	ret, frame = cam.read()
+
+	if ret == True:
+		# convert to grayscale and get faces
+		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+		faces = face_cas.detectMultiScale(gray, 1.3, 5)
+
+		# for each face
+		for (x, y, w, h) in faces:
+			face_component = frame[y:y+h, x:x+w, :]
+			fc = cv2.resize(face_component, (50, 50))
+
+			# after processing the image and rescaling
+			# convert to linear vector using .flatten()
+			# and pass to knn function along with all the data
+
+			lab = knn(fc.flatten(), data, labels)
+			# convert this label to int and get the corresponding name
+			text = names[int(lab)]
+
+			# display the name
+			cv2.putText(frame, text, (x, y), font, 1, (255, 255, 0), 2)
+
+			# draw a rectangle over the face
+			cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
+		cv2.imshow('face recognition', frame)
+
+		if cv2.waitKey(1) == 27:
+			break
+	else:
+		print 'Error'
+
+cv2.destroyAllWindows()
+```
+
+
