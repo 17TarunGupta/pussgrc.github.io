@@ -1,5 +1,4 @@
 ---
-
 layout: project       #important: don't change this
 title:  "YANTRIX SITE"
 date: 2017-08-24 08:07:00
@@ -13,7 +12,6 @@ carousel:        #place image (1280x600) with this name in /assets/img/project/c
 - cpp01.jpg
 - cpp02.jpg
 website: http://www.platform.net.in
-
 ---
 # YANTRIX WEBSITE
 
