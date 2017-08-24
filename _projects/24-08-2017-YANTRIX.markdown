@@ -18,7 +18,9 @@ website: http://www.platform.net.in
 # YANTRIX WEBSITE
 
 In Yantrix Website Project we create advance Port-folio through jkeyll theme. This is Multi-Page semi Dynamic website.
+
 **There are Many features in this site as:** 
+
    - Animated Home-Page
    - Port-folio
    - Blog
