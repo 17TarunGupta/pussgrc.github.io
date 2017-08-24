@@ -1,0 +1,30 @@
+---
+
+layout: project       #important: don't change this
+title:  "YANTRIX SITE"
+date: 2017-08-24 08:07:00
+author: RAHUL KUMAR, DILIP KUMAR SHARMA
+categories:
+- project             #important: leave this here
+img: portfolio_04.jpg #place image (600x450) with this name in /assets/img/project/
+thumb: thumb01.jpg
+carousel:        #place image (1280x600) with this name in /assets/img/project/carousel/
+- cpp1.jpg
+- cpp01.jpg
+- cpp02.jpg
+client: YANTRIX
+website: http://www.platform.net.in
+
+---
+### YANTRIX WEBSITE
+In Yantrix Website Project we create advance Port-folio through jkeyll theme. This is Multi-Page semi Dynamic website.
+##### There are Many features in this siten as:
+
+   1. Animated Home-Page
+-- 2. Port-folio
+-- 3. Blog
+-- 4. Automated Email-Response
+-- 5. Messenger and other supportive features
+
+#### For Any Query And suggestions Please contact us
+  Email: support@platform.net.in
