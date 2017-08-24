@@ -27,7 +27,7 @@ collections:
     output: true
     permalink: /projects/:title/
   questions:
-    output: true
+    output: false
     permalink: /questions/:title/
 
 ### CONTACT SETTINGS ###
