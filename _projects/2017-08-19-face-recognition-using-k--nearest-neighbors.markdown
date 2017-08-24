@@ -20,8 +20,8 @@ website: https://www.linkedin.com/in/rahul10-pu
 * Numpy, SciPy
 * Mathplotlib
 * OpenCV Python
-
-record_faces.py
+## The K-Nearest Neighbours(Supervised Learning) Algorithm Code
+### record_faces.py
 ```python
 import numpy as np
 import cv2
@@ -96,7 +96,7 @@ np.save('face_03', data)
 # We'll run the script for different people and store
 # the data into multiple files
 ```
-FaceRec.py
+### FaceRec.py
 ```python
 import numpy as np
 import cv2
@@ -184,5 +184,3 @@ while True:
 
 cv2.destroyAllWindows()
 ```
-
-
