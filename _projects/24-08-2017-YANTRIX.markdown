@@ -1,17 +1,17 @@
 ---
 layout: project       #important: don't change this
-title:  "CPP LAB CODE"
+title:  "Yantrix Website"
 date: 2017-08-24 02:08:00
-author: DILIP KUMAR SHARMA
+author: Rahul Kumar, Dilip Kumar Sharma
 categories:
 - project             #important: leave this here
-img: portfolio_04.jpg #place image (600x450) with this name in /assets/img/project/
+img: portfolio_08.jpg #place image (600x450) with this name in /assets/img/project/
 thumb: thumb01.jpg
 carousel:        #place image (1280x600) with this name in /assets/img/project/carousel/
 - cpp1.jpg
 - cpp01.jpg
 - cpp02.jpg
-website: http://www.platform.net.in
+website: https://pussgrc.github.io
 ---
 
 # YANTRIX WEBSITE
