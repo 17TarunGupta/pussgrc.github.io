@@ -21,4 +21,4 @@ But to practice that, it is important to brings its practical aspect into the cu
 **Here all programs are simple demonstrations.**
 
 I would like to thanks Mr. Naveen Dogra sir for always guiding me in the same.
->Project URL :-   [cpp-programs-dilip-cse](https://github.com/PUSSGRC/cpp-programs-dilip-cse/tree/Assignment)
+>Project URL :-   [cpp-programs-dilip-cse](https://github.com/PUSSGRC/cpp-programs-DilipCoder/tree/Assignment)
